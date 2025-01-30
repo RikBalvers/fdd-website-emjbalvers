@@ -24,7 +24,7 @@ $back-to-top-border-radius: 5px;
 
 // Durations
 $menu-animation-duration: 700ms;
-$arrow-animation-duration: 2.5s;
+$arrow-animation-duration: 2.2s;
 
 // Footer
 $footer-padding: 40px 0 30px 0;
@@ -124,7 +124,7 @@ header {
 }
 
 .arrow {
-  font-size: 30px;
+  font-size: 38px;
   margin-top: 5px;
   display: block;
   animation: fadeInUp $arrow-animation-duration infinite;
@@ -249,6 +249,17 @@ header {
   &.closing {
     animation: fadeOut $menu-animation-duration ease forwards;
   }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 33%;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 10;
+  display: none;
 }
 
 .menu {
