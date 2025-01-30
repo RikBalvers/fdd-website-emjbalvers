@@ -1,0 +1,162 @@
+.personas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eaeaea;
+  color: #000;
+}
+
+.personas h1 {
+  max-width: 1400px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 70px;
+}
+
+.index {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  font-size: 24px;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+  border-bottom: 5px solid black;
+}
+
+.intro ul {
+  text-align: left;
+  padding: 10px;
+  width: 80%;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin: 100px 0;
+  flex-direction: column;
+}
+
+.image-item {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.image-item p {
+  font-size: 20px;
+  padding: 15px 5px;
+}
+
+.uniform-width {
+  width: 1300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  background-color: #eaeaea;
+  justify-content: center;
+}
+
+.items {
+  display: flex;
+  list-style: none;
+  background-color: #eaeaea;
+  min-width: 1400px;
+  margin-top: 50px;
+  max-width: 1600px;
+}
+
+.breadcrumb-item {
+  color: gray;
+  font-size: 16px;
+  max-width: 1400px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  padding: 0 10px;
+  color: gray;
+}
+
+.breadcrumb-item a {
+  color: gray;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.blur {
+  filter: blur(40px);
+  transition: filter 0.4s;
+}
+
+.blur-loaded {
+  filter: blur(0);
+}
+
+img.loading {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+img:not(.loading) {
+  opacity: 1;
+}
+
+@media (max-width: 1600px) {
+  .personas {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .personas h1 {
+    font-size: 50px;
+  }
+
+  .index {
+    width: 100%;
+  }
+
+  .intro {
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+
+  .intro ul {
+    width: 100%;
+  }
+
+  .images {
+    gap: 40px;
+    margin: 50px 0;
+  }
+
+  .image-item {
+    max-width: 1000px;
+  }
+
+  .image-item p {
+    font-size: 18px;
+  }
+
+  .uniform-width {
+    width: 100%;
+  }
+
+  .breadcrumb-item {
+    font-size: 14px;
+  }
+}

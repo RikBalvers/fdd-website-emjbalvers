@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mijn Website</title>
+    <link rel="stylesheet" href="css/about_me.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="js/toggleMenu.js" defer></script>
+    <script src="js/scrollToTop.js" defer></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero" class="hero">
+      <header class="title-menu">
+        <div class="title">
+          <h1>Dit ben ik</h1>
+        </div>
+        <div class="menu-container">
+          <!-- Toggle button -->
+          <button
+            id="menu-ball"
+            aria-label="Toggle menu"
+            class="menu-button"
+            onclick="toggleMenu()"
+          >
+            <i id="menu-button" class="fa fa-bars"></i>
+          </button>
+          <!-- Menu -->
+          <div id="cover" class="cover">
+            <nav id="menu" class="menu">
+              <h3>Menu</h3>
+              <ul>
+                <li><a href="./">Home</a></li>
+                <li><a class="active" href="./about_me.html">Dit ben ik</a></li>
+                <li><a href="./processen.html">Processen</a></li>
+                <li><a href="./projecten.html">Projecten</a></li> <!-- Added link -->
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <br />
+      </header>
+    </div>
+
+    <!-- Over Mij Section -->
+    <div id="dit_ben_ik" class="dit_ben_ik">
+      <h1>OVER MIJ</h1>
+      <div class="index">
+        <div class="intro">
+          <br />
+          <p>
+            Hallo, ik ben Rik Balvers, 19 jaar oud en woonachtig in het gezellige Gouda. Ik ben geboren in Maleisië en sinds mijn 5e woon ik in Nederland. Met familie van verschillende nationaliteiten heb ik een brede culturele achtergrond, iets waar ik trots op ben.
+          </p>
+          <br />
+          <p>
+            Ik studeer ICT aan het HBO in Ede en heb een grote passie voor technologie en alles wat daarbij komt kijken. In mijn vrije tijd ben ik vaak met vrienden aan het gamen of actief bezig met sporten. Op woensdagavonden speel ik zaalvoetbal, wat een perfecte uitlaatklep is na een drukke week.
+          </p>
+          <br />
+          <p>
+            Naast sport ben ik muzikaal actief: ik speel gitaar en maak deel uit van het bandteam in mijn kerk, waar ik ook verantwoordelijk ben voor de geluidstechniek tijdens de diensten op zondag.
+          </p>
+          <br />
+          <p>
+            Mijn leven draait om een mix van technologie, sport, muziek, familie en mijn geloof. Het geeft me energie en motivatie om steeds het beste uit mezelf te halen.
+          </p>
+        </div>
+        <div class="families">
+          <div class="fam_nederland">
+            <img src="./assets/images/about_me/fam_nederland.jpeg" alt="Foto_familie_nederland" class="nl-pic picture">
+            <div class="description">
+              <h2>Familie Nederland</h2>
+              <br />
+              <p>
+                Mijn vader is Nederlands en de jongste in het gezin met vier oudere broers en zussen.
+              </p>
+              <br />
+              <p>
+                Hoewel mijn ooms, tantes en neven en nichten verspreid door Nederland wonen en we als jongste generatie niet altijd veel gemeen hebben, zorgen we er toch elk jaar voor om met kerst samen te komen.
+              </p>
+              <br />
+              <p>
+                We organiseren dan een gezellige familiebijeenkomst in Gouda, waar we gaan schaatsen en samen lekker eten. Dit is altijd een mooi moment om elkaar weer te zien en bij te praten.
+              </p>
+            </div>
+          </div>
+
+          <div class="gezin_balvers">
+            <div class="description">
+              <h2>Gezin Balvers</h2>
+              <br />
+              <p>
+                Ons gezin bestaat uit zes personen. Mijn vader is Nederlands, en mijn moeder heeft een Maleisische achtergrond met Chinees bloed. We zijn met vier kinderen: de twee oudste zijn jongens, en de twee jongsten zijn meiden.
+              </p>
+              <br />
+              <p>
+                Als familie zijn we hardwerkend en genieten we ervan om samen op vakantie te gaan. Vaak doen we dat met de camper, waarmee we mooie plekken ontdekken.
+              </p>
+              <br />
+              <p>
+                Elk paar jaar reizen we naar Maleisië om onze familie daar te bezoeken en tegelijkertijd te genieten van een welverdiende vakantie.
+              </p>
+            </div>
+            <img src="./assets/images/about_me/gezin.jpeg" alt="gezin-foto" class="gezin-pic picture">
+          </div>
+
+          <div class="fam_maleisie">
+            <img src="./assets/images/about_me/fam_maleisie.jpeg" alt="Foto_familie_maleisie" class="my-pic picture">
+            <div class="description">
+              <h2>Familie Maleisië</h2>
+              <br />
+              <p>
+                Mijn familie in Maleisië is het gezelligst! Vooral omdat er veel leeftijdgenoten zijn waar ik goed mee kan opschieten.
+              </p>
+              <br />
+              <p>
+                Wanneer we in Maleisië zijn, komen vaak ook familieleden uit Amerika langs, en die maken het nog leuker.
+                <br />
+                Op deze foto zie je twee gezinnen en een paar familieleden waar we goed bevriend mee zijn.
+              </p>
+              <br />
+              <p>
+                Veel van ons familie staan niet op de foto. Dit is omdat het daar geen vakantieperiode is wanneer wij op vakantie gaan, moeten veel van hen gewoon werken of naar school.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-section section-1">
+          <h3>MIJN WEBSITE</h3>
+          <p>Karnemelksloot 6a</p>
+          <p>2806 BG Gouda</p>
+          <p>+31 6 28860578</p>
+          <a href="mailto:emjbalvers@student.che.nl"
+            ><p>emjbalvers@student.che.nl</p></a
+          >
+        </div>
+        <div class="footer-section section-2">
+          <h3>MENU</h3>
+          <ul>
+            <li><a href="./processen.html">Website bouwen</a></li>
+            <li><a href="./about_me.html">Over mij</a></li>
+            <li><a href="./projecten.html">Projecten</a></li>
+            <li><a href="./contact.html">Contact formulier</a></li>
+          </ul>
+        </div>
+        <div class="footer-section section-3">
+          <h3>MEER</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/rik.balvers.1" target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/RikBalvers" target="_blank">Github</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/azin.erik/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@azin3371" target="_blank"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr />
+        <p>MIJN WEBSITE 2024 | Rik Balvers ©</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+.dit_ben_ik {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eaeaea;
+  color: #000;
+}
+
+.dit_ben_ik h1 {
+  max-width: 1400px;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 70px;
+}
+
+.index {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  font-size: 24px;
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 60px;
+  border-bottom: 5px solid black;
+  margin-bottom: 120px;
+}
+
+.families {
+  width: 1300px;
+}
+
+.fam_nederland {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+
+.fam_maleisie {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.gezin_balvers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  text-align: right;
+}
+
+
+.picture {
+  width: 57%;
+  filter: brightness(86%);
+}
+
+.description {
+  width: 40%;
+  font-size: 24px;
+}

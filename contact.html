@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mijn Website</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="js/toggleMenu.js" defer></script>
+    <script src="js/contactForm.js" defer></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero" class="hero">
+      <header class="title-menu">
+        <div class="title">
+          <h1>Contact</h1>
+        </div>
+        <div class="menu-container">
+          <!-- Toggle button -->
+          <button
+            id="menu-ball"
+            aria-label="Toggle menu"
+            class="menu-button"
+            onclick="toggleMenu()"
+          >
+            <i id="menu-button" class="fa fa-bars"></i>
+          </button>
+          <!-- Menu -->
+          <div id="cover" class="cover">
+            <nav id="menu" class="menu">
+              <h3>Menu</h3>
+              <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./about_me.html">Dit ben ik</a></li>
+                <li><a href="./processen.html">Processen</a></li>
+                <li><a href="./projecten.html">Projecten</a></li>
+                <!-- Added link -->
+                <li><a class="active" href="./contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <br />
+      </header>
+    </div>
+
+    <div id="contact" class="contact">
+      <h1>CONTACT FORMULIER</h1>
+      <div class="contact_index">
+        <div class="contact_text">
+          <p>
+            Heb je vragen of wil je meer weten over deze website? Laat een
+            bericht achter via het contactformulier hiernaast. Ik neem zo snel
+            mogelijk contact met je op!
+          </p>
+          <br />
+          <p>
+            Je kunt ook aanvullende informatie of feedback delen dat wordt
+            altijd gewaardeerd. Bedankt voor je interesse!
+          </p>
+        </div>
+
+        <div class="contact_form">
+          <form
+            action="https://formspree.io/f/mwpvodao"
+            method="POST"
+            onsubmit="showPopup(event)"
+          >
+            <label for="name">Volledige naam</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Naam"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <label for="message">Bericht</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Bericht"
+              rows="4"
+              required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+      <p>Formulier succesvol verzonden!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-section section-1">
+          <h3>MIJN WEBSITE</h3>
+          <p>Karnemelksloot 6a</p>
+          <p>2806 BG Gouda</p>
+          <p>+31 6 28860578</p>
+          <a href="mailto:emjbalvers@student.che.nl"
+            ><p>emjbalvers@student.che.nl</p></a
+          >
+        </div>
+        <div class="footer-section section-2">
+          <h3>MENU</h3>
+          <ul>
+            <li><a href="./processen.html">Website bouwen</a></li>
+            <li><a href="./about_me.html">Over mij</a></li>
+            <li><a href="./projecten.html">Projecten</a></li>
+            <li><a href="./contact.html">Contact formulier</a></li>
+          </ul>
+        </div>
+        <div class="footer-section section-3">
+          <h3>MEER</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/rik.balvers.1" target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/RikBalvers" target="_blank">Github</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/azin.erik/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@azin3371" target="_blank"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr />
+        <p>MIJN WEBSITE 2024 | Rik Balvers ©</p>
+      </div>
+    </footer>
+  </body>
+</html>
