@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mijn Website</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="js/toggleMenu.js" defer></script>
+    <script src="js/scrollToTop.js" defer></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero" class="hero-home">
+      <header class="title-menu">
+        <div class="title-home">
+          <h1>Mijn Website</h1>
+        </div>
+        <div class="menu-container">
+          <!-- Toggle button -->
+          <button
+            id="menu-ball"
+            aria-label="Toggle menu"
+            class="menu-button"
+            onclick="toggleMenu()"
+          >
+            <i id="menu-button" class="fa fa-bars"></i>
+          </button>
+          <!-- Menu -->
+          <div id="cover" class="cover">
+            <nav id="menu" class="menu">
+              <h3>Menu</h3>
+              <ul>
+                <li><a class="active" href="./">Home</a></li>
+                <li><a href="./about_me.html">Dit ben ik</a></li>
+                <li><a href="./processen.html">Processen</a></li>
+                <li><a href="./projecten.html">Projecten</a></li>
+                <!-- Added link -->
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <br />
+      </header>
+      <div class="scroll-down">
+        <p>Scroll down</p>
+        <span class="arrow">↓</span>
+      </div>
+    </div>
+
+    <!-- Over Mij Section -->
+    <div id="dit_ben_ik" class="dit_ben_ik">
+      <h1>DIT BEN IK</h1>
+      <div class="about_me">
+        <div class="over_mij">
+          <h2>Over mij</h2>
+          <br />
+          <p>
+            Hallo, ik ben Rik Balvers, 19 jaar oud en woonachtig in het
+            gezellige Gouda.
+            <br /><br />
+            Ik studeer ICT aan het HBO in Ede en heb een grote passie voor
+            technologie en alles wat daarbij komt kijken. In mijn vrije tijd ben
+            ik vaak met vrienden aan het gamen of actief bezig met sporten. Op
+            woensdagavonden speel ik zaalvoetbal, wat een perfecte uitlaatklep
+            is tijdens een drukke week.
+            <br /><br />
+            Wil je me persoonlijk kennen? Neem gerust contact met mij op. Zie
+            link hieronder...
+          </p>
+          <a href="./contact.html">Contact me</a>
+        </div>
+        <div class="over_mij_card">
+          <div class="card">
+            <h2>Rik Balvers</h2>
+            <img
+              src="./assets/images/pfp_rik.jpeg"
+              alt="Rik Balvers"
+              class="profile-img"
+            />
+            <p>
+              Wil je meer over mij weten en wat ik doe? <br />
+              Klik op de link hieronder om op de pagina te komen.
+            </p>
+            <a href="#aboutme" class="card-link">Over mij</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Processen Section -->
+    <div id="processen" class="processen">
+      <h1>PROCESSEN</h1>
+      <div class="website_bouwen">
+        <div class="vraag_1_website_bouwen">
+          <h2>Waarom is deze website gebouwd?</h2>
+          <p>
+            Deze website is gemaakt als onderdeel van een schoolopdracht. Het
+            doel van de opdracht is om te leren hoe je het proces van het bouwen
+            van een website doorloopt, van begin tot eind. Op deze website
+            beschrijf ik stap voor stap hoe het bouwproces is verlopen, welke
+            keuzes ik heb gemaakt en wat ik onderweg heb geleerd. Het is niet
+            alleen een eindresultaat, maar ook een verslag van mijn leerervaring
+          </p>
+        </div>
+
+        <div class="vraag_2_website_bouwen">
+          <h2>Hoe is dit tot stand gekomen?</h2>
+          <p>
+            Deze website is tot stand gekomen door een gestructureerd
+            designproces te volgen. We begonnen met het maken van persona's om
+            de doelgroep beter te begrijpen. Daarna hebben we een sitemap
+            opgesteld om de structuur van de website duidelijk te maken.
+            Vervolgens werkten we aan een paper prototype om een eerste schets
+            van het ontwerp te maken.
+            <br />
+            Stap voor stap werd het ontwerp verder verfijnd en uitgewerkt tot
+            deze website.
+          </p>
+          <br />
+          <p>
+            Meer weten over hoe dit tot stand is gekomen? Klik
+            <a href="./processen.html">hier.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projecten Section -->
+    <div id="projecten" class="projecten">
+      <h1>PROJECTEN</h1>
+      <div class="project_cards">
+        <a href="/projects/persona.html">
+          <div class="border">
+            <div class="project_img">
+              <img
+                src="./assets/covers/Personas.jpeg"
+                alt="Persona Project"
+                class="project-cover"
+              />
+              <div class="project_text">
+                <h2>PERSONA</h2>
+                <p>
+                  Leer hoe je een fictieve gebruikers ontwikkeld om de
+                  doelgroep en hun behoeften beter te begrijpen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="projects/lofi_prototype.html">
+          <div class="border">
+            <div class="project_img">
+              <img
+                src="./assets/covers/Lofi-prototype.jpeg"
+                alt="LOFI Prototype"
+                class="project-cover"
+              />
+              <div class="project_text">
+                <h2>LO-FI</h2>
+                <p>
+                  Leer hoe je een eenvoudig prototype gemaakt om de
+                  basisstructuur en functionaliteiten van de website te
+                  testen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="/projects/hifi_prototype.html">
+          <div class="border">
+            <div class="project_img">
+              <img
+                src="./assets/covers/Hifi-prototype.jpeg"
+                alt="HIFI Prototype"
+                class="project-cover"
+              />
+              <div class="project_text">
+                <h2>HI-FI</h2>
+                <p>
+                  Leer hoe je een gedetailleerd prototype gemaakt met
+                  realistische ontwerpen om de uiteindelijke website te
+                  benaderen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <a class="more_projects" href="./projecten.html">Meer projecten</a>
+    </div>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-section section-1">
+          <h3>MIJN WEBSITE</h3>
+          <p>Karnemelksloot 6a</p>
+          <p>2806 BG Gouda</p>
+          <p>+31 6 28860578</p>
+          <a href="mailto:emjbalvers@student.che.nl"
+            ><p>emjbalvers@student.che.nl</p></a
+          >
+        </div>
+        <div class="footer-section section-2">
+          <h3>MENU</h3>
+          <ul>
+            <li><a href="./processen.html">Website bouwen</a></li>
+            <li><a href="./about_me.html">Over mij</a></li>
+            <li><a href="./projecten.html">Projecten</a></li>
+            <li><a href="./contact.html">Contact formulier</a></li>
+          </ul>
+        </div>
+        <div class="footer-section section-3">
+          <h3>MEER</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/rik.balvers.1" target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/RikBalvers" target="_blank">Github</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/azin.erik/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@azin3371" target="_blank"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr />
+        <p>MIJN WEBSITE 2024 | Rik Balvers ©</p>
+      </div>
+    </footer>
+  </body>
+</html>
