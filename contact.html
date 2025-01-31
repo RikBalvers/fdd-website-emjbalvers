@@ -10,6 +10,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <!-- <link href="/dist/tailwind.css" rel="stylesheet"> -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="js/toggleMenu.js" defer></script>
     <script src="js/contactForm.js" defer></script>
@@ -18,8 +21,8 @@
     <!-- Hero Section -->
     <div id="hero" class="hero">
       <header class="title-menu">
-        <div class="title">
-          <h1>Contact</h1>
+        <div class="title bold">
+          <h1 class="text-[160px]">Contact</h1>
         </div>
         <div class="menu-container">
           <!-- Toggle button -->
@@ -52,7 +55,7 @@
     <!-- Overlay for menu -->
     <div id="overlay" class="overlay" onclick="closeMenu()"></div>
 
-    <div id="contact" class="contact">
+    <div id="contact" class="contact bold">
       <h1>CONTACT FORMULIER</h1>
       <div class="contact_index">
         <div class="contact_text">

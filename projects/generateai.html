@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generative AI</title>
+    <link rel="stylesheet" href="/projects/css/projects_style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="/js/toggleMenu.js" defer></script>
+    <script src="/js/scrollToTop.js" defer></script>
+    <script src="/js/OptimizeImages.js" defer></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero" class="hero-project">
+      <header class="title-menu">
+        <div class="title-project">
+          <h1>GENEREREN</h1>
+        </div>
+        <div class="menu-container">
+          <!-- Toggle button -->
+          <button
+            id="menu-ball"
+            aria-label="Toggle menu"
+            class="menu-button"
+            onclick="toggleMenu()"
+          >
+            <i id="menu-button" class="fa fa-bars"></i>
+          </button>
+          <!-- Menu -->
+          <div id="cover" class="cover">
+            <nav id="menu" class="menu">
+              <h2>Menu</h2>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about_me.html">Dit ben ik</a></li>
+                <li><a href="/processen.html">Processen</a></li>
+                <li><a href="/projecten.html">Projecten</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <br />
+      </header>
+    </div>
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol class="items">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/projecten.html">Projecten</a></li>
+        <li class="breadcrumb-item" aria-current="page">Generative AI</li>
+      </ol>
+    </nav>
+
+    <div id="personas" class="personas">
+      <h1>GENEREREN</h1>
+      <div class="index">
+        <div class="intro">
+          Hier is de herschreven versie van je tekst in HTML: ```html
+          <h2>Wat heb ik gegenereerd met AI en hoe moet dat?</h2>
+          <br />
+          <p>
+            In de les hebben we geleerd over kleuren en hoe deze invloed hebben
+            op het ontwerp. We hebben gekeken naar verschillende kleurprincipes,
+            zoals:
+          </p>
+          <ul>
+            <li>
+              <strong>Hue, Saturation, Brightness (HSB):</strong> De tint,
+              verzadiging en helderheid van een kleur.
+            </li>
+            <li>
+              <strong>RGB en CMYK kleurensystemen:</strong> RGB wordt gebruikt
+              voor digitale schermen, terwijl CMYK voor print wordt gebruikt.
+            </li>
+            <li>
+              <strong>Complementaire kleuren:</strong> Kleuren die tegenover
+              elkaar liggen in het kleurenspectrum en elkaar versterken.
+            </li>
+            <li>
+              <strong>Betekenissen van kleuren:</strong> Hoe verschillende
+              kleuren emoties en gevoelens kunnen oproepen.
+            </li>
+          </ul>
+          <br />
+          <p>
+            Daarnaast moesten we een AI-platform kiezen en volledig met AI een
+            website genereren. Ik heb hiervoor gewerkt met
+            <a
+              href="https://rikbalvers12.wixsite.com/generative-website"
+              target="_blank"
+              >mijn AI-gegenereerde website</a
+            >, waarbij ik AI gebruikte om tekst, afbeeldingen en het design te
+            laten maken. Tijdens dit proces heb ik een duidelijk stappenplan
+            ontwikkeld om de website gestructureerd op te bouwen, maar helaas
+            ben ik dit stappenplan kwijtgeraakt.
+          </p>
+        </div>
+        <div id="images" class="images">
+          <div class="image-item">
+            <a
+              href="https://rikbalvers12.wixsite.com/generative-website"
+              target="_blank"
+            >
+              <img
+                src="/assets/images/projects/genereren/Genereren.jpeg"
+                alt="Moodboard"
+                class="uniform-width blur"
+                loading="lazy"
+                onload="this.classList.add('blur-loaded')"
+              />
+            </a>
+
+            <p>
+              Moodboard: De moodboard van de website. De uiteindelijke resultaat
+              heeft niet heel veel van mijn moodboard. Dit is omdat ideeën
+              regelmatig veranderen, en tijdens het maken van mijn high-fidelity
+              prototype heb ik gemerkt dat dit niet de stijl is waar ik naar op
+              zoek was.
+            </p>
+          </div>
+        </div>
+        <!-- Back to Top Button -->
+        <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+      </div>
+    </div>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol class="items">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/projecten.html">Projecten</a></li>
+        <li class="breadcrumb-item" aria-current="page">Moodboard</li>
+      </ol>
+    </nav>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-section section-1">
+          <h3>MIJN WEBSITE</h3>
+          <p>Karnemelksloot 6a</p>
+          <p>2806 BG Gouda</p>
+          <p>+31 6 28860578</p>
+          <a href="mailto:emjbalvers@student.che.nl"
+            ><p>emjbalvers@student.che.nl</p></a
+          >
+        </div>
+        <div class="footer-section section-2">
+          <h3>MENU</h3>
+          <ul>
+            <li><a href="./processen.html">Website bouwen</a></li>
+            <li><a href="./about_me.html">Over mij</a></li>
+            <li><a href="./projecten.html">Projecten</a></li>
+            <li><a href="./contact.html">Contact formulier</a></li>
+          </ul>
+        </div>
+        <div class="footer-section section-3">
+          <h3>MEER</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/rik.balvers.1" target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/RikBalvers" target="_blank">Github</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/azin.erik/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@azin3371" target="_blank"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr />
+        <p>MIJN WEBSITE 2024 | Rik Balvers ©</p>
+      </div>
+    </footer>
+  </body>
+</html>

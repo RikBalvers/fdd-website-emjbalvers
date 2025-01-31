@@ -31,6 +31,10 @@
   border-bottom: 5px solid black;
 }
 
+.intro-reflectie {
+  border-bottom: none;
+}
+
 .intro ul {
   text-align: left;
   padding: 10px;
