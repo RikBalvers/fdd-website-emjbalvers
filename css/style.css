@@ -222,7 +222,7 @@ header {
 .menu.closing {
   animation: slideOut 400ms ease forwards;
 }
-.menu h3 {
+.menu h2 {
   font-size: 40px;
   margin-bottom: 20px;
   width: 5em;
@@ -402,7 +402,7 @@ header {
     width: 25%;
     height: 70%;
   }
-  .menu h3 {
+  .menu h2 {
     font-size: 30px;
   }
   .menu ul li a {
@@ -456,7 +456,7 @@ header {
   .menu {
     width: 25%;
   }
-  .menu h3 {
+  .menu h2 {
     font-size: 25px;
   }
   .menu ul li a {

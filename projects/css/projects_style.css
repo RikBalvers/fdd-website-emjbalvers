@@ -116,6 +116,50 @@ img:not(.loading) {
   opacity: 1;
 }
 
+.video-item {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.video-item .cover {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.youtube-container {
+  position: relative;
+  height: 698px;
+  overflow: hidden;
+  background: url("/assets/images/thumbnails/blurry1.jpeg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.youtube-container iframe {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
 @media (max-width: 1600px) {
   .personas {
     width: 90%;
